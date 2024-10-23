@@ -5,7 +5,7 @@ import time
 # Configuration options
 CONFIG = {
     'directory': 'scripts',  # Directory where Python scripts are stored
-    'repetition_number': 3,  # Number of times to run each script
+    'repetition_number': 1,  # Number of times to run each script
     'cooling_period_secs': 2,  # Cooldown period between script runs in seconds
     'log_file': 'outputs/pm_run_log.txt'  # Log file to track the run order
 }
