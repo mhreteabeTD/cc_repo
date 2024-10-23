@@ -13,7 +13,7 @@ CONFIG = {
     "run_log": "outputs/run_log.csv",  # Log file to track execution state
     "codecarbon_output_dir": "./codecarbon_output",  # Directory for Code Carbon outputs
     "device_id": "mhreteabe_pc",  # Device ID for tracking
-    "repetition_number": 3,  # Number of repetitions for each script
+    "repetition_number": 1,  # Number of repetitions for each script
     "cooling_period_secs": 2  # Cooling period between runs
 }
 
