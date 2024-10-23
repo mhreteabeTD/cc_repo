@@ -11,12 +11,12 @@ y = iris.target
 # Split data
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
 
-# Create AdaBoost model
-model = AdaBoostClassifier(n_estimators=100)
-model.fit(X_train, y_train)
+for i in range(10):
+    # Create AdaBoost model
+    model = AdaBoostClassifier(n_estimators=100)
+    model.fit(X_train, y_train)
 
 # Predict and evaluate
-for i in range(10):
-    predictions = model.predict(X_test)
-    accuracy = accuracy_score(y_test, predictions)
+predictions = model.predict(X_test)
+accuracy = accuracy_score(y_test, predictions)
 print(f"Accuracy: {accuracy}")
